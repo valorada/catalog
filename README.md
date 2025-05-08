@@ -8,3 +8,4 @@ VALORADA is a project funded by the European Commission in the framework of the 
 * The demonstration of systemic transformations.
 * The improvement of access to and usability of climate data.
 
+Link to [airtable prototype](https://airtable.com/appRz8KWMmZHHcJel/pagowkAjqU0dZZmWY).
