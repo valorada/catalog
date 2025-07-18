@@ -1,67 +1,127 @@
-dataset_id,name
-D0003,Agricultural water usage data (by crop or water source location)
-D0004,Air quality data (by day)
-D0005,Areas affected by drought (incl. Timing and severity of drought conditions)
-D0008,Climatic factors of relevance to the local pests and pathogens
-D0011,Energy provider system status data
-D0012,Extreme Heat and Drought
-D0013,Contour of Flood-prone area
-D0015,Forest area location (with information on tree species if available)
-D0017,Insurance loss valuations or claim records and locations
-D0018,Crop type map (GIS format)
-D0025,Location of abandoned properties or parcels and type of previous use
-D0026,Location and number of critical infrastructures in target area
-D0027,Location and number of disease occurrences in target area
-D0029,Income level or poverty level of households
-D0032,Status of forest health (level of damage from pest or pathogens)
-D0033,"Wildfire location, number, and geographic extent"
-D0035,Mean winter low temperatures (or other e.g. tick spead precondition)
-D0036,"Number, location, and type of businesses in local area"
-D0040,"Demography (Localisation and number of people + age, incomes)"
-D0043,Soil degradation and desertification risk characteristics
-D0044,"Soil maps incl. Soil type, extent, and quality or status "
-D0047,Types of local pests and pathogens and their sensitivity to climatic changes
-D0049,Water supply and access data in the target area
-D0051,Live Leaf Fuel Load
-D0052,Live Wood Fuel Load; Dead Foliage FuelLoad; Dead Wood Fuel Load; Live Fuel Moisture Content; Dead Foliage Moisture Content; Dead Wood Moisture Content
-D0058,Vegetation OpticalDepth
-D0059,Low Vegetation LAI; High Vegetation LAI
-D0061,Type of Vegetation
-D0062,Orography
-D0063,Lightning
-D0064,Population Density
-D0065,Road Density
-D0066,Crop productivity and evapotranspiration indicators from 2000 to present derived from satellite observations (Deprecated 13-02-2025)
+dataset_id,name,description,source,citation,license
+D0003,Agricultural water usage data (by crop or water source location),,,,
+D0004,Air quality data (by day),Mean urban air pollution of particulate matter (PM10 and PM2.5),"Primary data source:
+Remote sensing (satellite-based measurements are the most comprehensive and cost effective).
+",https://indicators.report/indicators/i-69/,
+D0005,Areas affected by drought (incl. Timing and severity of drought conditions),,,,
+D0008,Climatic factors of relevance to the local pests and pathogens,Aggregated datasets that pair modeled or observed pest/pathogen infection risks with climate variables at local to global scales,https://www.cgiar.org/news-events/news/what-do-we-know-about-the-future-of-crop-pests-and-pathogens-in-relation-to-food-systems/,"Chaloner, T. M., Gurr, S. J., & Bebber, D. P. (2021). Plant pathogen infection risk tracks global crop yields under climate change. Nature Climate Change, 11(8), 710–715. https://doi.org/10.1038/s41558-021-01104-9
+
+Juroszek, P., Bartsch, L., Fontaine, J. F., Racca, P., & Kleinhenz, B. (2022). Summary of the worldwide available crop disease risk simulation studies that were driven by climate change scenarios and published during the past 20 years. Plant Pathology, 71(9), 1815–1838. https://doi.org/10.1111/ppa.13634",
+D0011,Energy provider system status data,"The Global Power Plant Database is a comprehensive, open source database of power plants around the world. It centralizes power plant data to make it easier to navigate, compare and draw insights for one's own analysis. The database covers approximately 35,000 power plants from 167 countries and includes thermal plants (e.g. coal, gas, oil, nuclear, biomass, waste, geothermal) and renewables (e.g. hydro, wind, solar). Each power plant is geolocated and entries contain information on plant capacity, generation, ownership, and fuel type.",https://datasets.wri.org/datasets/global-power-plant-database?map=eyJ2aWV3U3RhdGUiOnsibGF0aXR1ZGUiOjM2Ljc1ODA2NzA4MzAyNTU5NCwibG9uZ2l0dWRlIjoyMC4xMzkxNjY3NDA0NzUxMDUsInpvb20iOjMsImJlYXJpbmciOjAsInBpdGNoIjowLCJwYWRkaW5nIjp7InRvcCI6MCwiYm90dG9tIjowLCJsZWZ0IjowLCJyaWdodCI6MH19LCJiYXNlbWFwIjoibGlnaHQiLCJib3VuZGFyaWVzIjpmYWxzZSwibGFiZWxzIjoiZGFyayIsImFjdGl2ZUxheWVyR3JvdXBzIjpbeyJkYXRhc2V0SWQiOiI1MzYyM2RmZC0zZGY2LTRmMTUtYTA5MS02NzQ1N2NkYjU3MWYiLCJsYXllcnMiOlsiMmE2OTQyODktZmVjOS00YmZlLWE2ZDItNTZjMzg2NGVjMzQ5Il19XSwiYm91bmRzIjp7ImJib3giOm51bGwsIm9wdGlvbnMiOnt9fSwibGF5ZXJzUGFyc2VkIjpbWyIyYTY5NDI4OS1mZWM5LTRiZmUtYTZkMi01NmMzODY0ZWMzNDkiLHsidmlzaWJpbGl0eSI6dHJ1ZSwiYWN0aXZlIjp0cnVlLCJvcGFjaXR5IjoxLCJ6SW5kZXgiOjExfV1dfQ%3D%3D,"Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, World Resources Institute. 2018. Global Power Plant Database. Published on Resource Watch and Google Earth Engine; http://resourcewatch.org/ https://earthengine.google.com/",CC BY 4.0
+D0012,Extreme Heat and Drought,"Annual probability of drought (soil moisture below a baseline threshold) or extreme heat (temperature and humidity-based indicators over a threshold) events on a 0.5° grid. 8 hydrological models forced by 4 GCMs under baseline, RCP 2.6 & 6.0 emission scenarios. Current and future maps in 2030, 2050 and 2080.
+The ISIMIP2b climate input data and impact model output data analyzed in this study are available in the ISIMIP data repository at ESGF.",https://data.isimip.org/search/tree/ISIMIP2b/DerivedOutputData/lange2020/,"Lange, S., Volkholz, J., Geiger, T., Zhao, F., Vega, I., Veldkamp, T., et al. (2020). Projecting exposure to extreme climate impact events across six event categories and three spatial scales. Earth's Future, 8, e2020EF001616. DOI 10.1029/2020EF001616",Creative Commons Zero 1.0 Universal
+D0013,Contour of Flood-prone area,"The datasets included in this collection depict flood prone areas in Europe and the World for river flood events of different magnitude (from 1-in-10-year to 1-in-500-year). The maps have been developed using hydrological and hydrodynamic models, driven by the climatological data of the European and Global Flood Awareness Systems (EFAS and GloFAS) of the Copernicus Emergency Management Service. European-scale maps comprise most of the geographical Europe and all the river basins entering the Mediterranean and Black Seas in the Caucasus, Middle East and Northern Africa countries. All maps are in raster format (GEOTIF) with a grid resolution of 90m (3 arcseconds). The maps can be used to assess the exposure of population and economic assets to river floods, and to perform flood risk assessments.","
+https://european-flood.emergency.copernicus.eu/efas_frontend/#/home
+(or https://data.jrc.ec.europa.eu/collection/id-0054
+or
+local data)","Baugh, Calum; Colonese, Juan; D'Angelo, Claudia; Dottori, Francesco; Neal, Jeffrey; Prudhomme, Christel; Salamon, Peter (2024): Global river flood hazard maps. European Commission, Joint Research Centre (JRC) [Dataset] Available online at:data.europa.eu/89h/jrc-floods-floodmapgl_rp50y-tif.",Creative Commons Attribution 4.0 International
+D0015,Forest area location (with information on tree species if available),"TreeAI Database (SmartForest Project)
+
+Description: A global, open-access dataset with 61,158 annotated trees across 5,000 hectares, including high-resolution imagery and species-level annotations from 52 datasets in 29 countries.
+
+Data Includes: Centimeter-scale orthophotos, precise tree locations, and species identification, supporting advanced ecological and management research","TreeAI: a global database for tree species annotations and high-resolution imagery
+https://smartforest.ai/wp-content/uploads/2025/02/SmartForest-2025-Abstract-TreeAI-a-global-database-for-tree-species-annotations-and-high-resolution-imagery.pdf
+","Other sources:
+
+https://data.globalforestwatch.org/
+
+Cazzolla et al 2022. The number of tree species on Earth. Proceedings of the National Academy of Sciences 119:e2115329119. ",
+D0017,Insurance loss valuations or claim records and locations,"The dataset, named ""insurance_claims.csv"", is a comprehensive collection of insurance claim records. Each row represents an individual claim, and the columns represent various features associated with that claim. ",https://data.mendeley.com/datasets/992mh7dk9y/2,,
+D0018,Crop type map (GIS format),LPIS from the concerned country,,,
+D0025,Location of abandoned properties or parcels and type of previous use,,,,
+D0026,Location and number of critical infrastructures in target area,"Infrastructure risk: Infrastructure expected annual direct damages are calculated from OpenStreetMap and Gridfinder networks, STORM cyclones and Aqueduct floods.","Derived from exposure and hazard layers
+https://global.infrastructureresilience.org/view/exposure?y=20&x=-40&z=3&sections=%7B%7D
+
+https://healthsites.io/  for Health site locations","Russell T., Thomas F., nismod/open-gira contributors and OpenStreetMap contributors (2022) Global Infrastructure Damage Risk Estimates. [Dataset] Available at https://global.infrastructureresilience.org","CC-BY-SA, ODbL"
+D0027,Location and number of disease occurrences in target area,,,,
+D0029,Income level or poverty level of households,"Human Development (Subnational): Development, Health, Education and Income indices for 186 countries, 1783 sub-national regions.
+
+The SHDI is an average of the subnational values of three dimensions: education, health and standard of living. To compute the SHDI on the basis of the three dimension indices, the geometric mean of the three indices is taken. Three major data sources were used to create the SHDI database: statistical offices (including Eurostat, the statistical office of the European Union), the Area Database of the Global Data Lab, and data from the HDI website of the Human Development Report Office of the United Nations Development Program.",https://globaldatalab.org/shdi/ ,Global Data Lab (2019) Subnational Human Development Index (SHDI) Available online: globaldatalab.org/shdi.,Free for use with acknowledgement of data source: globaldatalab.org/termsofuse.
+D0032,Status of forest health (level of damage from pest or pathogens),"Forest Integrity: 10 arcsec grid. Data are available at www.forestlandscapeintegrity.com. The datasets used to develop the Forest Landscape Integrity Index can be found at the following websites: tree cover and loss, tree cover loss driver, potential forest cover, ESA-CCI Land Cover, Open Street Maps, croplands, surface water, protected areas.",https://www.nature.com/articles/s41467-020-19493-3,"Grantham, H.S., Duncan, A., Evans, T.D. et al. Anthropogenic modification of forests means only 40% of remaining forests have high ecosystem integrity. Nat Commun 11, 5978 (2020). DOI: 10.1038/s41467-020-19493-3",Published as available with article (license not specified)
+D0033,"Wildfire location, number, and geographic extent",,EFIS EUROPE (https://forest-fire.emergency.copernicus.eu/apps/effis_current_situation/),,
+D0035,Mean winter low temperatures (or other e.g. tick spead precondition),,,,
+D0036,"Number, location, and type of businesses in local area",,,,
+D0040,"Demography (Localisation and number of people + age, incomes)","Population and built-up area: GHS-POP R2023A - The spatial raster dataset depicts the distribution of population, expressed as the number of people per cell. Residential population estimates between 1975 and 2020 in 5 years intervals and projections to 2025 and 2030 derived from CIESIN GPWv4.11 were disaggregated from census or administrative units to grid cells, informed by the distribution, density, and classification of built-up as mapped in the Global Human Settlement Layer (GHSL) global layer per corresponding epoch.","
+
+Eurostat > GEOSTAT 1kmx1km with population, age, employement...
+
+Global Human Settlement Layer with population 100mx100m : https://human-settlement.emergency.copernicus.eu/datasets.php (https://data.jrc.ec.europa.eu/dataset/2ff68a52-5b5b-4a22-8f40-c41da8332cfe
+
+https://data.jrc.ec.europa.eu/dataset/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea )
+
+Urban Atlas Copernicus if available","Schiavina, Marcello; Freire, Sergio; Alessandra Carioli; MacManus, Kytt (2023): GHS-POP R2023A - GHS population grid multitemporal (1975-2030). European Commission, Joint Research Centre (JRC) [Dataset] doi: 10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE PID: http://data.europa.eu/89h/2ff68a52-5b5b-4a22-8f40-c41da8332cfe
+
+Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-S R2023A - GHS built-up surface grid, derived from Sentinel2 composite and Landsat, multitemporal (1975-2030). European Commission, Joint Research Centre (JRC) [Dataset] doi: 10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA PID: http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea
+
+Schiavina, M., Melchiorri, M., Pesaresi, M., Politis, P., Carneiro Freire, S.M., Maffenini, L., Florio, P., Ehrlich, D., Goch, K., Carioli, A., Uhl, J., Tommasi, P. and Kemper, T., GHSL Data Package 2023, Publications Office of the European Union, Luxembourg, 2023, ISBN 978-92-68-02341-9, doi:10.2760/098587, JRC133256.",CC-BY 4.0
+D0043,Soil degradation and desertification risk characteristics,"Soil organic carbon content at 0-30cm, in tonnes/hectare, aggregated to 1000m grid. Soil organic carbon content (fine earth fraction) in dg/kg at 6 standard depths. Predictions were derived using a digital soil mapping approach based on Quantile Random Forest, drawing on a global compilation of soil profile data and environmental layers. This map is the result of resampling the mean SoilGrids 250 m predictions (Poggio et al. 2021) for each 1000 m cell.",https://soilgrids.org/  ,"Poggio, L., de Sousa, L.M., Batjes, N.H., Heuvelink, G.B.M., Kempen, B., Ribeiro, E., Rossiter, D., 2021. SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty. SOIL 7, 217–240. https://doi.org/10.5194/soil-7-217-2021",
+D0044,"Soil maps incl. Soil type, extent, and quality or status ","Land cover: European Space Agency Climate Change Initiative Land Cover project (2021) Land cover classification gridded maps from 1992 to present derived from satellite observations, v2.1.1. https://doi.org/10.24381/cds.006f2c9a",https://cds.climate.copernicus.eu/datasets/satellite-land-cover?tab=overview,"The source of these data are the ESA Climate Change Initiative and in particular its Land Cover project © ESA Climate Change Initiative Land Cover led by UCLouvain (2017), ESA Climate Change Initiative – Land Cover project 2020 and EC C3S Land Cover.",ESA CCI
+D0047,Types of local pests and pathogens and their sensitivity to climatic changes,,,,
+D0049,Water supply and access data in the target area,"UNICEF_Drinking water_customizable datasets on water access for countries, regions, and urban/rural breakdowns",https://data.unicef.org/topic/water-and-sanitation/drinking-water/,,
+D0051,Live Leaf Fuel Load,"Recent advancements in machine learning (ML) have expanded the potential use across scientific applications, including weather and hazard forecasting. The ability of these methods to extract information from diverse and novel data types enables the transition from forecasting fire weather, to predicting actual fire activity. In this study we demonstrate that this shift is feasible also within an operational context. Traditional methods of fire forecasts tend to over predict high fire danger, particularly in fuel limited biomes, often resulting in false alarms. By using data on fuel characteristics, ignitions and observed fire activity, data-driven predictions reduce the false-alarm rate of high-danger forecasts, enhancing their accuracy. This is made possible by high quality global datasets of fuel evolution and fire detection. ",https://www.nature.com/articles/s41467-025-58097-7,,Fuel model
+D0052,Live Wood Fuel Load; Dead Foliage FuelLoad; Dead Wood Fuel Load; Live Fuel Moisture Content; Dead Foliage Moisture Content; Dead Wood Moisture Content,"Effective wildfire management and prevention strategies depend on accurate forecasts of fire occurrence and propagation. Fuel load and fuel moisture content are essential variables for forecasting fire occurrence, and whilst existing operational systems incorporate dead fuel moisture content, both live fuel moisture content and fuel load are either approximated or neglected. We propose a mid-complexity model combining data driven and analytical methods to predict fuel characteristics. The model can be integrated into earth system models to provide real-time forecasts and climate records taking advantage of meteorological variables, land surface modelling, and satellite observations. Fuel load and moisture is partitioned into live and dead fuels, including both wood and foliage components. ",https://bg.copernicus.org/articles/21/279/2024/,"McNorton, J. R. and Di Giuseppe, F.: A global fuel characteristic model and dataset for wildfire prediction, Biogeosciences, 21, 279–300, https://doi.org/10.5194/bg-21-279-2024, 2024.",Fuel model
+D0058,Vegetation OpticalDepth,"Passive microwave remote sensing observations at L-band provide key and global information on surface soil moisture and vegetation water content, which are related to the Earth water and carbon cycles. Only two space-borne L-band sensors are currently operating: SMOS, launched end of 2009 and thus providing now a 10-year global data set and SMAP, launched beginning of 2015. This study provides a state-of-the-art scientific overview of the SMOS-IC retrieval data set based on the SMOS L-band observations. This SMOS product aims at improved performance and independence of auxiliary data, key features for robust applications. ",https://www.sciencedirect.com/science/article/pii/S0034425720306118?via%3Dihub,"Wigneron, J.-P. et al. SMOS-IC data record of soil moisture and L-VOD: historical development, applications and perspectives. Remote Sens. Environ. 254, 112238 (2021).",Satellite (SMOS)
+D0059,Low Vegetation LAI; High Vegetation LAI,"The land-surface developments of the European Centre for Medium-range Weather Forecasts (ECMWF) are based on the Carbon-Hydrology Tiled Scheme for Surface Exchanges over Land (CHTESSEL) and form an integral part of the Integrated Forecasting System (IFS), supporting a wide range of global weather, climate and environmental applications. In order to structure, coordinate and focus future developments and benefit from international collaboration in new areas, a flexible system named ECLand, which would facilitate modular extensions to support numerical weather prediction (NWP) and society-relevant operational services, for example, Copernicus, is presented. This paper introduces recent examples of novel ECLand developments on (i) vegetation; (ii) snow; (iii) soil; (iv) open water/lake; (v) river/inundation; and (vi) urban areas. ",https://www.mdpi.com/2073-4433/12/6/723,"Boussetta, S. et al. Ecland: the ECMWF land surface modelling system. Atmosphere 12, 723 (2021).",Satellite (multi- sensor)
+D0061,Type of Vegetation,"The land-surface developments of the European Centre for Medium-range Weather Forecasts (ECMWF) are based on the Carbon-Hydrology Tiled Scheme for Surface Exchanges over Land (CHTESSEL) and form an integral part of the Integrated Forecasting System (IFS), supporting a wide range of global weather, climate and environmental applications. In order to structure, coordinate and focus future developments and benefit from international collaboration in new areas, a flexible system named ECLand, which would facilitate modular extensions to support numerical weather prediction (NWP) and society-relevant operational services, for example, Copernicus, is presented. This paper introduces recent examples of novel ECLand developments on (i) vegetation; (ii) snow; (iii) soil; (iv) open water/lake; (v) river/inundation; and (vi) urban areas. ",https://www.mdpi.com/2073-4433/12/6/725,"Boussetta, S. et al. Ecland: the ECMWF land surface modelling system. Atmosphere 12, 723 (2021).",ECLand
+D0062,Orography,"The land-surface developments of the European Centre for Medium-range Weather Forecasts (ECMWF) are based on the Carbon-Hydrology Tiled Scheme for Surface Exchanges over Land (CHTESSEL) and form an integral part of the Integrated Forecasting System (IFS), supporting a wide range of global weather, climate and environmental applications. In order to structure, coordinate and focus future developments and benefit from international collaboration in new areas, a flexible system named ECLand, which would facilitate modular extensions to support numerical weather prediction (NWP) and society-relevant operational services, for example, Copernicus, is presented. This paper introduces recent examples of novel ECLand developments on (i) vegetation; (ii) snow; (iii) soil; (iv) open water/lake; (v) river/inundation; and (vi) urban areas. ",https://www.mdpi.com/2073-4433/12/6/726,"Boussetta, S. et al. Ecland: the ECMWF land surface modelling system. Atmosphere 12, 723 (2021).",ECLand
+D0063,Lightning,"In this paper it is shown that for an ensemble prediction system the CRPS can be decomposed into a reliability part and a resolution/uncertainty part, in a way that is similar to the decomposition of the Brier score. The reliability part of the CRPS is closely connected to the rank histogram of the ensemble, while the resolution/uncertainty part can be related to the average spread within the ensemble and the behavior of its outliers. The usefulness of such a decomposition is illustrated for the ensemble prediction system running at the European Centre for Medium-Range Weather Forecasts. ",https://journals.ametsoc.org/view/journals/wefo/15/5/1520-0434_2000_015_0559_dotcrp_2_0_co_2.xml,"Hersbach, H. Decomposition of the continuous ranked probability score for ensemble prediction systems. Weather Forecast. 15, 559–570 (2000).",ERA5
+D0064,Population Density,"
+Gridded population of the world (GPW) v4-SEDAC (2020, 2.5 arcmin to 9 km)",,,Center for International Earth ScienceInformation Network- CIESIN
+D0065,Road Density,"Global Roads Inventory Dataset- 2018
+Georeferenced information on road infrastructure is essential for spatial planning, socio-economic assessments and environmental impact analyses. Yet current global road maps are typically outdated or characterized by spatial bias in coverage. In the Global Roads Inventory Project we gathered, harmonized and integrated nearly 60 geospatial datasets on road infrastructure into a global roads dataset. The resulting dataset covers 222 countries and includes over 21 million km of roads, which is two to three times the total length in the currently best available country-based global roads datasets. ","https://iopscience.iop.org/article/10.1088/1748-9326/aabd42
+
+https://planet.openstreetmap.org/ ","Meijer, J. R., Huijbregts, M. A., Schotten, K. C. & Schipper, A. M. Global patterns of current and future road infrastructure. Environ. Res. Lett. 13, 064006 (2018).",Center for International Earth ScienceInformation Network- CIESIN
+D0066,Crop productivity and evapotranspiration indicators from 2000 to present derived from satellite observations (Deprecated 13-02-2025),"This dataset provides crop productivity indicators up to near real-time and evapotranspiration indicators ending in 2018 with high-resolution coverage of agricultural regions with dominant cropping patterns from around the globe.
+
+",https://cds.climate.copernicus.eu/datasets/sis-agroproductivity-indicators?tab=overview,https://doi.org/10.24381/cds.b2f6f9f7,
 D0068,"CORDEX regional climate model data on single levels
-"
+",,https://cds.climate.copernicus.eu/datasets/projections-cordex-domains-single-levels?tab=overview,https://doi.org/10.24381/cds.bc91edc4,
 D0069,"Thermal comfort indices derived from ERA5 reanalysis
-"
+","This dataset provides a complete historical reconstruction for a set of indices representing human thermal stress and discomfort in outdoor conditions. This dataset, also known as ERA5-HEAT (Human thErmAl comforT) represents the current state-of-the-art for bioclimatology data record production.",https://cds.climate.copernicus.eu/datasets/derived-utci-historical?tab=overview,https://doi.org/10.24381/cds.553b7519,
 D0070,"Climate extreme indices and heat stress indicators derived from CMIP6 global climate projections
-"
-D0071,Climate indicators for Europe from 1940 to 2100 derived from reanalysis and climate projections
+","The dataset provides climate extreme indices related to temperature and precipitation as defined by the Expert Team on Climate Change Detection and Indices (ETCCDI), as well as selected heat stress indicators (HSI). The indices are provided for historical and future climate projections (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5) included in the Coupled Model Intercomparison Project Phase 6 (CMIP6) and used in the 6th Assessment Report of the Intergovernmental Panel on Climate Change (IPCC). This dataset provides a comprehensive source of pre-calculated and consistent ETCCDI and heat stress indicators commonly used by the climate science and impact communities. The majority of models used in this catalogue entry are now available in the Climate Data Store though the indices offered in this entry additionally include ensemble members obtained from the Earth System Grid Federation.",https://cds.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=overview,https://doi.org/10.24381/cds.776e08bd,
+D0071,Climate indicators for Europe from 1940 to 2100 derived from reanalysis and climate projections,"This dataset provides a series of climate indices derived from reanalysis and model simulations data hosted on the Copernicus Climate Data Store (CDS). These indicators describe how climate variability and change of essential climate variables can impact sectors such as health, agriculture, forestry, energy, tourism, or water and coastal management.",https://cds.climate.copernicus.eu/datasets/sis-ecde-climate-indicators?tab=overview,,
 D0072,"Climatic suitability for the presence and seasonal activity of the Aedes albopictus mosquito for Europe derived from climate projections
-"
-D0073,Number of  policies supporting action on climate risk
-D0074,Percentage of Municipal/Regional Budget Dedicated to Climate Change Strategies
-D0075,"List of departments, agencies, institutions, initiatives involved in climate 
-adaptation planning, decision-making, and actions locally"
-D0076,Number of properties and their localisation
-D0077,Location of water scarcity zones
-D0078,Contour and Area of coastline
-D0079,Contour and Area of coastline under marine protection
-D0080,Landcover/Landuse 
-D0081,Contour and area of protected natural area
-D0082,Crop coefficient for each crop type (csv file)
-D0083,3D building data (building footprints and heights)
-D0084,Subdivision of the territory into urban morphological units
-D0085,Landsat-8 imagery (TRS)
-D0086,Contours of permeable/impermeable areas
-D0087,Number of  tools supporting action on climate risk
-D0088,Hydrology-related climate impact indicators from 1970 to 2100 derived from bias adjusted European climate projections
+","This dataset contains climatic suitability indicators for the Aedes albopictus (tiger mosquito) for Europe produced within the C3S European Health service. The provided indicators are the climatic suitability for the presence of Aedes albopictus and the season length of presence of Aedes albopictus. This mosquito transmits vector-borne diseases, such as dengue and chikungunya.
+
+Environmental factors such as temperature and rainfall impact the survival chance and seasonal activity of Aedes albopictus. In Europe, the environmental conditions become more favorable for the establishment of Aedes albopictus, which is a serious threat for human health in Europe.",https://cds.climate.copernicus.eu/datasets/sis-health-vector?tab=overview,https://doi.org/10.24381/cds.d08ed09a,
+D0073,Number of  policies supporting action on climate risk,,,,
+D0074,Percentage of Municipal/Regional Budget Dedicated to Climate Change Strategies,,,,
+D0075,"List of departments, agencies, institutions, initiatives involved in climate
+adaptation planning, decision-making, and actions locally",,,,
+D0076,Number of properties and their localisation,,,,
+D0077,Location of water scarcity zones,,,,
+D0078,Contour and Area of coastline,,,,
+D0079,Contour and Area of coastline under marine protection,,,,
+D0080,Landcover/Landuse ,,"
+OSM Landuse (https://osmlanduse.org/#12/8.7/49.4/0/) -
+Dynamic world (https://dynamicworld.app/explore) -
+Corine Landcover (last update 2018, https://land.copernicus.eu/en/products/corine-land-cover) -
+Global Dynamic LandCover (last update 2019, https://land.copernicus.eu/en/products/global-dynamic-land-cover -
+Or can be obtained using satellite imagery (Spot, Sentinel-2) with appropriate analysis
+",,
+D0081,Contour and area of protected natural area,,Natura 2000: https://natura2000.eea.europa.eu/,,
+D0082,Crop coefficient for each crop type (csv file),,"FAO (Allen et al., 1998) - Crop evapotranspiration - Guidelines for computing crop water requirements - FAO Irrigation and drainage paper 56
+
+OR
+
+More precise local data, such as from chambers of agriculture in France",,
+D0083,3D building data (building footprints and heights),,"OSM for footprints, ALOS DSM (30m) for heights (ALOS DSM (30m) (Survey Date: 01/01/2006 - 01/01/2011, https://portal.opentopography.org/raster?opentopoID=OTALOS.112016.4326.2) )-
+
+Global Human Settlement Layer 1x1km resolution (https://human-settlement.emergency.copernicus.eu/) ",,
+D0084,Subdivision of the territory into urban morphological units,,"Urban Atlas Copernicus if available (Functional Urban Areas (FUA) with more than 50,000 inhabitants, https://land.copernicus.eu/en/products/urban-atlas/urban-atlas-2018)",,
+D0085,Landsat-8 imagery (TRS),,NASA/ESA,,
+D0086,Contours of permeable/impermeable areas,,"OSM Landuse (update https://osmlanduse.org/#12/8.7/49.4/0/) -
+Or can be obtained using satellite imagery (Spot, Pleiades, Sentinel-2) with appropriate analysis",,
+D0087,Number of  tools supporting action on climate risk,,,,
+D0088,Hydrology-related climate impact indicators from 1970 to 2100 derived from bias adjusted European climate projections,"This dataset provides water variables and indicators based on hydrological impact modelling, forced by bias adjusted regional climate simulations from the European Coordinated Regional Climate Downscaling Experiment (EURO-CORDEX). The dataset contains Essential Climate Variable (ECV) data in the form of daily mean river discharge and a set of climate impact indicators (CIIs) for both water quantity and quality. ECV datasets provide the empirical evidence needed to understand the current climate and predict future changes.",https://cds.climate.copernicus.eu/datasets/sis-hydrology-variables-derived-projections?tab=overview,https://doi.org/10.24381/cds.73237ad6,
 D0089,"Heat waves and cold spells in Europe derived from climate projections
-"
-D0090,CAMS global biomass burning emissions based on fire radiative power (GFAS)
-D0091,Fire danger indicators for Europe from 1970 to 2098 derived from climate projections
-D0092,Projected monthly precipitation
-D0093,Historical  monthly precipitation
-D0094,Monthly Evapotranspiration
+",he dataset contains the number of hot and cold spell days using different European-wide and national/regional definitions developed within the C3S European Health service. These heat wave and cold spell days are available for different future time periods and use different climate change scenarios.,https://cds.climate.copernicus.eu/datasets/sis-heat-and-cold-spells?tab=download,https://doi.org/10.24381/cds.9e7ca677,
+D0090,CAMS global biomass burning emissions based on fire radiative power (GFAS),"Emissions of atmospheric pollutants from biomass burning and vegetation fires are key drivers of the evolution of atmospheric composition, with a high degree of spatial and temporal variability, and an accurate representation of them in models is essential.
+
+The CAMS Global Fire Assimilation System (GFAS) utilises satellite observations of fire radiative power (FRP) to provide near-real-time information on the location, relative intensity and estimated emissions from biomass burning and vegetation fires. Emissions are estimated by (i) conversion of FRP observations to the dry matter (DM) consumed by the fire, and (ii) application of emission factors to DM for different biomes, based on field and laboratory studies in the scientific literature, to estimate the emissions. Emissions estimates for 40 pyrogenic species are available from GFAS, including aerosols, reactive gases and greenhouse gases, on a regular grid with a spatial resolution of 0.1 degrees longitude by 0.1 degrees latitude.",https://ads.atmosphere.copernicus.eu/datasets/cams-global-fire-emissions-gfas?tab=overview,https://doi.org/10.24381/a05253c7,
+D0091,Fire danger indicators for Europe from 1970 to 2098 derived from climate projections,"The dataset presents projections of fire danger indicators for Europe based upon the Canadian Fire Weather Index System (FWI) under future climate conditions. The FWI is a meteorologically based index used worldwide to estimate the fire danger and is implemented in the Global ECMWF Fire Forecasting model (GEFF). In this dataset, daily FWI values, seasonal FWI values, and other FWI derived, threshold-specific, indicators were modelled using the GEFF model to estimate the fire danger in future climate scenarios. ",https://cds.climate.copernicus.eu/datasets/sis-tourism-fire-danger-indicators?tab=overview,https://doi.org/10.24381/cds.ca755de7,
+D0092,Projected monthly precipitation,Downscaled bioclimatic indicators,https://cds.climate.copernicus.eu/datasets/sis-biodiversity-cmip5-regional?tab=overview,"https://doi.org/10.24381/cds.fe90a594
+",
+D0093,Historical  monthly precipitation,Downscaled bioclimatic indicators,https://cds.climate.copernicus.eu/datasets/sis-biodiversity-era5-regional?tab=overview,https://doi.org/10.24381/cds.fe90a594,
+D0094,Monthly Evapotranspiration,Copernicus Interactive Climate Atlas,https://doi.org/10.24381/cds.b2f6f9f6,,
