@@ -1,18 +1,19 @@
 indicator_id,category,name,source,description
 I1001,Exposure,Number of households affected by drought,"Report
+Russell, T., Nicholas, C., & Bernhofen, M. (2024). Annual probability of extreme heat and drought events, derived from Lange et al 2020 [Data set]. Zenodo. 10.5281/zenodo.11582369
+
 Responding to climate change impacts on human health
 in Europe: focus on floods, droughts and water quality
-EEA Report 3/2024 (chapter 3)","Drought impacts households, e.g., through water shortages, restrictions in water use or dependence on alternative water sources (e.g. the number of days per year with water use regulation on certain areas, number of households there). It can affect food security or cause economic strain increased costs (water, electricity). Indicator can also just describe the number of households in a high risk area."
-I1004,Exposure,Number of people living in flood-prone areas,"Overview on indicators used to characterise flood vulnerability, 
-
+EEA Report 3/2024 (chapter 3)","Population exposure is calculated as annual expected population directly exposed to the occurrence of extreme heat or drought events, assuming any population directly within the footprint of an event is exposed, but not otherwise taking any other risk-mitigating or -propagating factors into account."
+I1004,Exposure,Flood exposure,"Overview on indicators used to characterise flood vulnerability,
 Moreira et al. (2021), https://doi.org/10.5194/nhess-21-1513-2021 
-
 Malgwi et al. (2020), https://doi.org/10.5194/nhess-20-2067-2020 
-
-Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2019), https://doi.org/10.3390/w11112371 ","I would name this indicator as ""SOCIAL VULNERABILITY TO FLOODS"" 
+Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2019), https://doi.org/10.3390/w11112371 ","
 
 A high number of people living in flood prone areas shows a high exposure to flood risks. Could be completed with other indicators to assess the impacts of floods on people living in flood prone areas (in terms of socio-economic impacts)."
-I1005,Exposure,Number of properties flooded per year,"Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2019), https://doi.org/10.3390/w11112371",Climate change increases the frequency and intensity of extreme weather events such as floods. It can also change the location and timing of floods.
+I1005,Exposure,Number of properties flooded per year (or per event),"Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2019), https://doi.org/10.3390/w11112371",Climate change increases the frequency and intensity of extreme weather events such as floods. It can also change the location and timing of floods.
+I1006,Exposure,Number of businesses located in flooded areas,"The FloodFlash Commercial Risk Report (2022)
+https://www.towergate.com/media/2388/ff-commercial-risk-report-2022-002.pdf ",The share of all businesses or commercial properties in a region that are situated within flood risk zones.
 I1008,Exposure,Critical infrastructures in areas at risk from flooding,"Cataloging and Testing Flood Risk Management Measures to Increase the Resilience of Critical Infrastructure Networks (2024), https://doi.org/10.3390/smartcities7050117
 
 Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2019), https://doi.org/10.3390/w11112371
@@ -20,7 +21,7 @@ Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2
 Geospatial assessment (GIS) of the locations of critical infrastructure and overlaying flood risk map to identify, which hospitals, health care centres, nursing homes and similar, fall within high-risk areas. QGIS plugins, for example Flood Risk and SAGA GIS can help analyse flood data and create risk maps).). 
 
 Plugins: https://plugins.qgis.org/plugins/Floodrisk/#plugin-about ","Essential services, such as hospitals should be located outside of risk areas to prevent them from being damaged and/or destroyed from floods/coastal erosion. Could be completed with other indicators to assess the vulnerability (i.e. sensitivity and adaptive capacity)"
-I1010,Exposure,Share of flood risk area in the city or region,"Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2019), https://doi.org/10.3390/w11112371
+I1010,Exposure,Share of flood area in the city or region,"Flood Risk Mapping Worldwide: A Flexible Methodology and Toolbox, Glas et al. (2019), https://doi.org/10.3390/w11112371
 QGIS plugins, for example Flood Risk and SAGA GIS can help analyse flood data and create risk maps
 
 Plugins: https://plugins.qgis.org/plugins/Floodrisk/#plugin-about",
@@ -32,7 +33,8 @@ Paz, S., 2021, Climate change impacts on vector-borne diseases in Europe: risks,
 
 Semenza, J.C., 2015, Prototype early warning systems for vector-borne diseases in Europe, International Journal of Environmental Research and Public Health 12(6): 6333–6351. https://doi.org/10.3390/ijerph120606333 
 
-Semenza, J.C. & Suk, J.E., 2018, Vector-borne diseases and climate change: a European perspective, FEMS Microbiology Letters 365(2), fnx244. https://doi.org/10.1093/femsle/fnx244","Climate change can have an influence on vector-borne disease (VBD) transmission as climatic conditions affect the life cycle of disease vectors (e.g., mosquitos, ticks,...) and the replication rates of viruses and parasites inside the vectors. Increased temperatures may shorten vector reproduction cycles and incubation periods for vector-borne pathogens, leading to larger vector populations and increased transmission risks. Changes in temperatures, precipitations and humidity could affect both the geographic distribution and seasonal activity of vectors and host animals, as well as human behaviours and land use patterns, and as such the overall prevalence of VBDs (source: https://climate-adapt.eea.europa.eu/en/metadata/adaptation-options/early-warning-systems-for-vector-borne-diseases). "
+Semenza, J.C. & Suk, J.E., 2018, Vector-borne diseases and climate change: a European perspective, FEMS Microbiology Letters 365(2), fnx244. https://doi.org/10.1093/femsle/fnx244","Climate change increases the areal distribution and probability of occurrence of many vector-borne diseases (carried by, e.g., ticks and mosquitos)"
+I1014,Exposure,Change in climatic preconditions for vector-borne diseases,,Climate change increases the areal distribution and probability of occurrence of many vector-borne diseases (carried by vectors such as ticks and mosquitos)
 I1016,Exposure,Location of abandoned lands,"Reference: Salis et al. 2022, https://doi.org/10.3390/land11111942 ",Abandoned or mal-maintained land areas pose an increased wildfire risk.
 I1020,Exposure,Number of weather-related disruptions in traffic and transportation,"Gössling et al. 2023, https://link.springer.com/article/10.1007/s11069-023-06054-2
 
@@ -50,17 +52,20 @@ I1026,Sensitivity,Changes in human thermal comfort in urban environments,"Di Nap
 I1028,Sensitivity,Excess hospitalizations and deaths during heatwaves,"Pattern and determinants of hospitalization during heat waves: an ecologic study: BMC Public Health. 2007 Aug 9;7:200. doi: 10.1186/1471-2458-7-200 
 
 The 2024 Europe report of the Lancet Countdown on health and climate change: unprecedented warming demands unprecedented action
-van Daalen, Kim R et al.The Lancet Public Health, Volume 9, Issue 7, e495 - e522 https://www.thelancet.com/action/showCitFormats?doi=10.1016%2FS2468-2667%2824%2900055-0&pii=S2468-2667%2824%2900055-0 ",The difference between the observed number of hospital admissions during a heatwave and the expected number based on historical averages for the same period
-I1030,Sensitivity,Losses of GDP in percentage per year due to extreme events,no accurate data to support the indicator,Extreme precipitation can damage the economic infrastructure and value chains and cause losses in GDP (Locally this could be measured in another unit than GDP). The indicator gives an indication as to the level of vulnerability of different sectors to extreme weather.
+van Daalen, Kim R et al.The Lancet Public Health, Volume 9, Issue 7, e495 - e522 https://www.thelancet.com/action/showCitFormats?doi=10.1016%2FS2468-2667%2824%2900055-0&pii=S2468-2667%2824%2900055-0 ",
+I1030,Sensitivity,Losses of GDP in percentage per year due to extreme events,"The Fiscal Impact of Extreme Weather and Climate Events: Evidence for EU Countries
+https://economy-finance.ec.europa.eu/system/files/2022-07/dp168_en.pdf 
+
+","Annualized Disaster Losses as % of Local GDP:  The total economic losses from extreme events in a locality over a year, divided by the locality’s annual GDP, multiplied by 100."
 I1035,Sensitivity,Drought-related disturbances to agricultural livelihoods,"Annual Crop Yield Reduction: Measures the decrease in crop yields (tons/hectare or % change) during drought years compared to average or baseline years. 
 Source: Indicator-to-impact links to help improve agricultural drought preparedness in Thailand, Nat. Hazards Earth Syst. Sci., 23, 2419–2441, https://doi.org/10.5194/nhess-23-2419-2023, 2023.
 
 Farm Business Profit/Loss: Assesses changes in farm income or profit margins attributable to drought events, often using outcome-based modeling systems
 Source: Monitoring agricultural and economic drought: the Australian Agricultural Drought Indicators (AADI). https://doi.org/10.5194/egusphere-2024-3731 
-","Refers to the disruptions and challenges to agricultural sector due to prolonged periods of low rainfall or water shortages. These disturbances can be, e.g., crop failure (especially ""cash crops"" that farmers rely on for livelihood), reduced yield, loss of seedlings, rising costs. Could also be measured in loss of income, increase in debt or unemployment."
+",
 I1039,Sensitivity,Number of disruptions in energy system due to heat and drought,"García-León, D., Casanueva, A., Standardi, G. et al. Current and projected regional economic impacts of heatwaves in Europe. Nat Commun 12, 5807 (2021). https://doi.org/10.1038/s41467-021-26050-z
 
-Compound Climate and Infrastructure Events: How Electrical Grid Failure Alters Heat Wave Risk. Environ Sci Technol. 2021 Apr 30;55(10):6957–6964. doi: 10.1021/acs.est.1c00024","The count of grid failures, blackouts, or power interruptions directly linked to extreme heat or drought conditions within a specified period (e.g., annually)"
+Compound Climate and Infrastructure Events: How Electrical Grid Failure Alters Heat Wave Risk. Environ Sci Technol. 2021 Apr 30;55(10):6957–6964. doi: 10.1021/acs.est.1c00024","Number and/or distribution of weather-related disruptions. Can help understand, which weather-related events cause disruptions currently and does the changing climate increase/decrease the risk of occurrence."
 I1040,exposure,Number of disruptions in energy system due to flooding,"Weather-related disruptions in and unavailabilty of power supply: https://www.umweltbundesamt.de/en/monitoring-on-das/cluster/energy-industry/ew-i-1/indicator#ew-i-1-weather-related-disruptions-in-power-supply-
 
 Copernicus: 
@@ -73,18 +78,15 @@ https://www.emwis.org/news-and-events/news/water-scarcity-in-europe-key-findings
 
 European Environment Agency (ed.) 2024: Europe's state of water 2024. The need for improved water resilience. EEA Report No 07/2024. Luxembourg: Publications Office of the European Union
 https://www.eea.europa.eu/en/analysis/publications/europes-state-of-water-2024
-","Percentage of Population Affected by Water Scarcity: Measures the share of the population living in areas experiencing water scarcity for at least one quarter of the year.
-Example: In 2022, 34% of the EU population was affected by water scarcity conditions during at least one quarter of the year
-
-Tracks the number of residents subject to water use restrictions, rationing, or supply interruptions during drought or scarcity events."
-I1044,Sensitivity,"Wildfire danger, smoke and attributable deaths","Sources:
+","Describing, for example, the number of days per year with water use regulation"
+I1044,Sensitivity,Number of days with poor air quality due to wildfires,"Sources:
 https://climate-adapt.eea.europa.eu/en/metadata/indicators/wildfire-smoke-in-europe 
 
 Hänninen, R., et al., 2022, Daily surface concentration of fire-related PM2. 5 for 2003-2021, modelled by SILAM CTM when using the MODIS satellite data for the fire radiative power, Finnish Meteorological Institute [dataset]. https://doi.org/10.23728/fmi-b2share.a006840cce9340e8bf11e562bb8d396e
 
 Orellano, Pablo, et al., 2020, Short-term exposure to particulate matter (PM10 and PM2. 5), nitrogen dioxide (NO2), and ozone (O3) and all-cause and cause-specific mortality: Systematic review and meta-analysis, Environment international 142, 105876.  https://doi.org/10.1016/j.envint.2020.105876    
 
-Soares, J., M. Sofiev, and J. Hakkarainen, 2025, Uncertainties of wild-land fires emission in AQMEII phase 2 case study, Atmospheric Environment 115, 361-370. https://doi.org/10.1016/j.atmosenv.2015.01.068","This indicator tracks the climate-driven change in wildfire danger (Fire Weather Index), estimates changes in the annual exposure for wildfire-originated PM2.5, and estimates deaths attributable to wildfire-originated PM2.5."
+Soares, J., M. Sofiev, and J. Hakkarainen, 2025, Uncertainties of wild-land fires emission in AQMEII phase 2 case study, Atmospheric Environment 115, 361-370. https://doi.org/10.1016/j.atmosenv.2015.01.068",Poor air quality worsens the effects of heat on people’s health.
 I1045,Exposure,Areas vulnerable to wildfires,"Wildfire Risk Index: Integrates fire danger (likelihood of fire due to weather and fuel conditions) with vulnerability (exposure of people, ecosystems, and assets).
 Used at the pan-European scale to rank and map areas by wildfire risk
 Source: 
@@ -101,8 +103,10 @@ https://www.eea.europa.eu/en/analysis/indicators/forest-fires-in-europe?activeAc
 
 Venäläinen, A., Korhonen, N., Hyvärinen, O., Koutsias, N., Xystrakis, F., Urbieta, I. R. and Moreno, J. M., 2014, 'Temporal variations and change in forest fire danger in Europe for 1960–2012', Natural Hazards and Earth System Sciences 14(6), pp. 1477–1490 ( https://www.nat-hazards-earth-syst-sci.net/14/1477/2014/ ) accessed September 26, 2019
 
-Mila, C., 2024 Wildfire smoke indicators for the Lancet Countdown Europe 2024 edition. https://github.com/carlesmila/LCDE2024_wildfires ",
-I1046,Sensitivity,(change) Increase in soil degradation and desertification,"Panagos, P., Broothaerts, N., Ballabio, C., Orgiazzi, A., De Rosa, D., Borrelli, P., Liakos, L., Vieira, D., Van Eynde, E., Arias Navarro, C., Breure, T., Fendrich, A., Köninger, J., Labouyrie, M., Matthews, F., Muntwyler, A., Jimenez, J.M., Wojda, P., Yunta, F., Marechal, A., Sala, S., Jones, A., 2024. How the EU Soil Observatory is providing solid science for healthy soils. European Journal of Soil Science,  75(3), e13507. doi: 10.1111/ejss.13507
+Mila, C., 2024 Wildfire smoke indicators for the Lancet Countdown Europe 2024 edition. https://github.com/carlesmila/LCDE2024_wildfires ","Global data-driven prediction of fire activity
+
+https://www.nature.com/articles/s41467-025-58097-7"
+I1046,Sensitivity,Increase in soil degradation and desertification,"Panagos, P., Broothaerts, N., Ballabio, C., Orgiazzi, A., De Rosa, D., Borrelli, P., Liakos, L., Vieira, D., Van Eynde, E., Arias Navarro, C., Breure, T., Fendrich, A., Köninger, J., Labouyrie, M., Matthews, F., Muntwyler, A., Jimenez, J.M., Wojda, P., Yunta, F., Marechal, A., Sala, S., Jones, A., 2024. How the EU Soil Observatory is providing solid science for healthy soils. European Journal of Soil Science,  75(3), e13507. doi: 10.1111/ejss.13507
 
 Panagos, P., Borrelli, P., Jones, A. and Robinson, D.A., 2024. A 1 billion euro mission: A Soil Deal for Europe. European Journal of Soil Science, 75(1), e13466.DOI: 10.1111/ejss.13466
 
@@ -114,7 +118,7 @@ I1048,Sensitivity,Water usage rate in agriculture,"Total Water Abstraction for A
 Agri-environmental indicator - irrigation
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Agri-environmental_indicator_-_irrigation#Data_sources 
 
-Additional sourceS: https://agridata.ec.europa.eu/Qlik_Downloads/InfoSheetEnvironmental/infoC39.html ","The total volume of water withdrawn from natural sources (surface and groundwater) for agricultural purposes, typically measured in million cubic meters (Mm³) per year"
+Additional sourceS: https://agridata.ec.europa.eu/Qlik_Downloads/InfoSheetEnvironmental/infoC39.html ",Important indicator in understanding water needs and need for more efficient practices.
 I1052,Sensitivity,Change in the threat of pests and diseases harming agriculture/forestry,"Gullino et al. 2022: https://doi.org/10.3390/su141912421
  
 Paini et al. 2016 (agricultural invasive species): https://doi.org/10.1073/pnas.1602205113 
@@ -129,11 +133,14 @@ I1054,Sensitivity,Damages in forests due to weather-related events,"Santopuoli e
 
 van Hensbergen, H. & Cedergren, J. 2020: https://doi.org/10.4060/cb0686en ","Describes the amount, percentage or areal distribution of weather-related damages and assesses the extent of harm inflicted on forest ecosystems resulting from extreme weather phenomena, such as storms, droughts, floods, and wildfires. This indicator is essential for understanding the vulnerability of forested areas to climate change. Certain forest types and species are more susceptible to weather-related damage, e.g., young or aging forests may lack the structural integrity to withstand severe storms, while invasive species can exacerbate the impact of climate stressors."
 I1057,Sensitivity,Total forest area impacted by wildfire per year,https://www.globalforestwatch.org/dashboards/global/?category=fires,"Increasing temperature due to climate change can lead to increase wildfire with negative impactson forest resources, local populations and tourism."
-I1059,Adaptive Capacity,"Development of tools, guidelines, and policies to support action on climate risks","Good practices for climaterelated and environmental
-risk management
-European central Bak. Observations from the 2022. thematic review. https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.thematicreviewcercompendiumgoodpractices112022~b474fb8ed0.en.pdf
+I1059,Adaptive Capacity,"Development of tools, guidelines, and policies to support action on climate risks","Good practices for climaterelated and environmental risk management_European central Bank. Observations from the 2022. Thematic review. https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.thematicreviewcercompendiumgoodpractices112022~b474fb8ed0.en.pdf
 
-UNEP Database: Sustainability Risk Tool Dashboard. https://www.unepfi.org/themes/climate-change/the-sustainability-risk-tool-dashboard/","Counts the tools (e.g., risk heatmaps, scenario analysis platforms, country risk score models) created or implemented by institutions to identify and assess climate risks"
+UNEP Database: Sustainability Risk Tool Dashboard. https://www.unepfi.org/themes/climate-change/the-sustainability-risk-tool-dashboard/","This indicator could be expanded to track various elements chosen, e.g.:
+- number of tools, guides, policies developed
+- number of users of such resources
+- number of working groups or agencies involved in actions
+- status of development (production, testing, issued, in use) of tools, guides, or policies
+- etc."
 I1060,Adaptive Capacity,Capacity building and awareness raising actions,"ECBI (2018). Pocket guide to capacity building for climate change.
 
 Swart, R., J., and Singh, T., (2013). MEDIATION and the adaptation challenge: identifying appropriate methods and tools to support climate change adaptation decision making. Alterra, Wageningen UR, Wageningen, the Netherlands, p. 32.
@@ -143,37 +150,30 @@ Climate-Adapt_Capacity building on climate change adaptation: https://climate-ad
 Developing Key Performance Indicators for Climate Change Adaptation and Resilience Planning: https://nicholasinstitute.duke.edu/sites/default/files/publications/developing-key-performance-indicators-for-climate-change-adaptation-and-resilience-planning.pdf
 
 
-","This indicator can integrate som of the following elements:
-Training sessions/workshops held	Number per year or adaptation cycle
-Participants trained	Total number, disaggregated by group
-Educational programs/courses developed (Number of new or revised curricula);
-Capacity building materials produced (Number of manuals, toolkits, online resources);
-Technical assistance missions	(Number of expert visits/coaching sessions);
-Awareness campaigns conducted	(Number per year, by audience);
-Campaign reach/engagement	(People reached, participation rates, behavioral change);
-Change in awareness/knowledge (Pre/post survey scores, % increase in awareness
-Stakeholder participation	Number/type of organizations involved).
-Institutional capacity assessment	Scores or qualitative ratings of institutional readiness"
+","This indicator can be expanded to include the chosen elements, e.g.:
+- Number of staff or other target groups having received training on climate adaptation
+- Number of trainings or campaigns conducted
+- Number of stakeholders using and distributing climate information"
 I1061,Adaptive Capacity,Number of financial mechanisms identified to support climate change adaptation,"Climate Finance Thematic Briefing: Adaptation Finance Charlene Watson, ODI, Liane Schalatek, HBS, and Aurélien Evéqu: https://climatefundsupdate.org/wp-content/uploads/2022/03/CFF3-Adaptation-Finance_ENG-2021.pdf
 
 Clmate-Adapt_ Innovative Financial Instruments for Climate Adaptation: https://napglobalnetwork.org/innovative-financing/
 
-","Counts the total number of different financial mechanisms available or in use for adaptation. Examples include grants, concessional loans, equity investments, guarantees, insurance schemes, green bonds, adaptation funds, and blended finance instruments"
-I1062,Adaptive Capacity,Number of businesses with risk management plans considering climate change aspects or adaptation options,European central Bank (2022) Good practices for climaterelated and environmental risk management. https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.thematicreviewcercompendiumgoodpractices112022~b474fb8ed0.en.pdf,Counts Number or Percentage of Businesses Setting Climate-Related Metrics and Targets
-I1064,Adaptive Capacity,Funding for climate-adapted construction and refurbishment,,"Climate-adapted construction and refurbishment can prevent or minimise damage resulting from higher temperatures or extreme climatic events and can contribute to climate protection, e.g. via energy savings. Incentives and/or funding can be prerequisites for people or businesses to undertake climate-adapted construction work."
-I1066,Adaptive Capacity,Percentage of hydroelectric projects that consider future climate risks,,
-I1067,Adaptive Capacity,Percentage of transport infrastructure standards revised to consider climate risks,"Gössling et al. 2023, https://link.springer.com/article/10.1007/s11069-023-06054-2
+",Incentives and/or funding can be prerequisites for climate-adaptation work.
+I1062,Adaptive Capacity,Number of businesses with risk management plans considering climate change aspects or adaptation options,European central Bank (2022) Good practices for climaterelated and environmental risk management. https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.thematicreviewcercompendiumgoodpractices112022~b474fb8ed0.en.pdf,
+I1064,Adaptive Capacity,Funding for climate-adapted construction and refurbishment,"Suggested Impact Reporting Metrics for Climate Change Adaptation Projects
+https://www.icmagroup.org/assets/documents/Regulatory/Green-Bonds/Suggested-metrics-for-Climate-Adaptation-projects-with-Reporting-Templates-December-2020-151220.pdf 
 
-Leviäkangas et al. 2013, https://journals.sagepub.com/doi/10.3141/2329-06
+",The total sum (in €/$/£) invested in climate-adapted construction and refurbishment over a reporting period
+I1068,Adaptive Capacity,Number of properties with retrofitted resilience measures,"Key Performance Indicators in Retrofitting Projects: A Review
+https://eares.org/siteadmin/upload/1230EAP0518205.pdf
 
-Elyoussoufi et al. 2023: https://doi.org/10.3390/meteorology2040028 ",
-I1068,Adaptive Capacity,Number of properties with retrofitted resilience measures,,"These measures could include: flood resilience, water meters, water efficicency, cooling, etc. "
-I1069,Adaptive Capacity,Number of water efficiency measures implemented in energy generation and extraction,,
-I1071,Adaptive Capacity,Uptake of early warning and disaster preparedness systems,,"This indicator could include the chosen elements, e.g. systems for:
-- air or water quality
-- soil and land degradation
-- flood or fire protection
-- etc."
+Retrofit Handbook
+https://www.nema.gov.au/sites/default/files/2024-12/Retrofit%20Handbook%20%E2%80%93%20Bushfire%20Resilience%20Rating.pdf
+
+Key Performance Indicators for Decision Support in Building Retrofit Planning: An Italian Case Study
+https://www.mdpi.com/1996-1073/17/3/559","These measures could include: flood resilience, water meters, water efficicency, cooling, etc. "
+I1071,Adaptive Capacity,Uptake of early warning and disaster preparedness systems,"Toolkit for Monitoring & Evaluation of Early Warnings for All
+https://www.undrr.org/media/99963/download?startDownload=20250508",Number or Percentage of At-Risk Communities with Operational Early Warning Systems
 I1074,Sensitivity,Share of permeable surfaces in urban environments,"Soil sealing is a comprehensive indicator that characterises aspects of a large number of measures, such as the proportion of green space, structural development and land use (Murata and Kawai2018).Reduced sealing therefore indicates reduced heating of surfaces and increased water permeability, which is important for reducing both heat- and water-related risks (Fokaides et al. 2016) (Source: Patel et al 2025 https://doi.org/10.1002/cli2.70009).
 
 Additional sources:
@@ -189,7 +189,8 @@ https://doi.org/10.1127/metz/2021/1074
 García,P., M.E.Pérez, and A.Guerra. 2014. “Using TM Images to Detect Soil Sealing Change in Madrid (Spain).” Geoderma 214–215:135–140
 
 ","Describes the share of permeable surfaces in urban environment, related to risk of pluvial flooding. Can also be related to human comfort during heat."
-I1075,Adaptive Capacity,Percentage of coastline under marine protection,,
+I1075,Adaptive Capacity,Percentage of coastline under marine protection,"Marine protected areas in Europe's seas
+https://www.eea.europa.eu/en/analysis/indicators/marine-protected-areas-in-europes-seas","The proportion of a country’s coastline, marine territorial waters, or Exclusive Economic Zone (EEZ) that falls within officially designated marine protected areas (MPAs)"
 I1078,Sensitivity,Share of forested area,"Tree cover describes the proportion of the area that is covered by trees or a considerable amount of vegetation. Trees, on the other hand, have more than just positive effects for urban residents. For instance, densely planted trees cool less at night than open meadow areas (Spronken-SmithandOke1999). In addition, tree avenues with canopy closures on busy streets can increase the concentration of air pollutants due to reduced mixing (Venter et al. 2024) (source: Patel et al 2025, https://doi.org/10.1002/cli2.70009).
 
 Additional sources:
@@ -198,24 +199,45 @@ Spronken-Smith, R.A., and T.R.Oke. 1999. “Scale Modelling of Nocturnal Cooling
 
 Venter, Z. S., A. Hassani, E. Stange, P. Schneider, and N. Castell. 2024. “Reassessing the Role of Urban Green Space in Air Pollution Control.” Proceedings of the National Academy of Sciences 121, no. 6: e2306200121. https://doi.org/10.1073/pnas.2306200121. 
 
-Meier,F., and D.Scherer. 2012. “Spatial and Temporal Variability of Urban Tree Canopy Temperature During Summer 2010 in Berlin, Germany.” Theoretical and Applied Climatology 110, no. 3: 373–384. https://doi.org/10.1007/s00704-012-0631-0.",Ratio of forest area to municipal area 
-I1079,Adaptive Capacity,Share of protected natural area,,Ratio of the area of protected natural sites (NATURA 2000 and CDDA) to the municipal area 
-I1080,Sensitivity,Share of agricultural area,,Ratio of agricultural area to municipal area 
-I1081,Sensitivity,Water needs of crops,,Assesses the water balance of a field by comparing water inputs with plant water use through evapotranspiration.
-I1082,Sensitivity,Vulnerability of crops to climatic hazards,,This indicator takes the form of a toolbox. It can be used to select a crop and highlight the risks associated with the climate at certain key moments in the vegetative development process.
-I1083,Sensitivity,Impact of climate change on annual crops yield,,"This indicator is based on the AquaCrop crop growth model developed by the Land and Water Division of FAO to address food security and to assess the effect of environment and management on crop production. AquaCrop simulates yield response to water of herbaceous crops, and is particularly suited to address conditions where water is a key limiting factor in crop production."
+Meier,F., and D.Scherer. 2012. “Spatial and Temporal Variability of Urban Tree Canopy Temperature During Summer 2010 in Berlin, Germany.” Theoretical and Applied Climatology 110, no. 3: 373–384. https://doi.org/10.1007/s00704-012-0631-0.",Ratio of forest area in the unit of analysis under consideration
+I1079,Adaptive Capacity,Share of protected natural area,"Terrestrial protected areas in Europe
+https://www.eea.europa.eu/en/analysis/indicators/terrestrial-protected-areas-in-europe",Ratio of the area of protected natural sites (NATURA 2000 and CDDA) in the unit of analysis under consideration
+I1080,Sensitivity,Share of agricultural area,"Land statistics and indicators 2000–2021
+https://openknowledge.fao.org/server/api/core/bitstreams/5c8b2707-1bcf-4c29-90e2-3487e583f71e/content",Ratio of agricultural area in the unit of analysis under consideration
+I1081,Sensitivity,Water needs of crops,"simplified crop water balance based on open scientific litterature
+
+https://www.eea.europa.eu/en/analysis/maps-and-charts/trend-in-crop-water-deficit/
+
+",The water needs of a field is assessed by comparing water inputs with plant water use through evapotranspiration. Water inputs refer to rainfall. Evapotranspiration is calculated using a crop coefficient. The soil compartment is not considered in this assessment.
+I1082,Sensitivity,Vulnerability of crops to climatic hazards,"Based on agro-climatic indicators from https://climadiag-agriculture.fr/
+",This indicator takes the form of a toolbox. It can be used to select a crop and highlight the risks associated with the climate at certain key moments in the vegetative development process.
 I1084,Sensitivity,Population vulnerability to heat waves,"Indicators such as heat-related mortality rates and the heat vul nerability index (HVI) are examples of population vulnerability index. These indexes consider various factors, such as age, health status and mortality due to other diseases, in addition to heat stress for calculation.
-However,it is challenging to gather all the data required for the calculation at the city at national level. See Wolf and McGregor (2013, https://doi.org/10.1016/j.wace.2013.07.004) for methodological approach to calculating HVI in their work. https://www.sciencedirect.com/science/article/pii/S2212094713000054?via%3Dihub ",Level of vulnerability of populations to a heat wave aggravated by the potential UHI (urban heat island) effect. Use I1021 and I1003
+However,it is challenging to gather all the data required for the calculation at the city at national level. See Wolf and McGregor (2013, https://doi.org/10.1016/j.wace.2013.07.004) for methodological approach to calculating HVI in their work. https://www.sciencedirect.com/science/article/pii/S2212094713000054?via%3Dihub 
+
+https://climate-adapt.eea.europa.eu/en/metadata/indicators/vulnerability-to-extremes-of-heat
+","Level of vulnerability of populations to a heat wave aggravated by the potential UHI (urban heat island) effect - Use I1085, I1086, I1087and I1088"
 I1085,Sensitivity,LCZ vulnerability level,"Local climate zones (LCZs) are a classification of a city’s block geometry and land cover in view of the effects on the local urban climate(Jiaetal.2024).The concept of LCZs has contributed to a better understanding and comparability of the intensity of UHI (Stewart and Oke2012),as this concept can be useful for various urban climate or microclimate variables (source: Patel et al 2025 https://doi.org/10.1002/cli2.70009).
 See:
 https://doi.org/10.1007/s11783-017-0984-9 
 https://doi.org/10.3390/ijgi10080539 
 https://doi.org/10.3390/su12198083 
-https://doi.org/10.1109/JSTARS.2012.2189873",Vulnerability class of the unit of analysis to urban heat islands in relation to the local climate zone class to which it belongs
-I1086,Sensitivity,Share of vulnerable population,,Percentage of population sensitive to heat waves (under 5 and over 65 years old)
-I1087,Sensitivity,Poverty rate,,Rate of low-income households (heat wave resilience index)
+https://doi.org/10.1109/JSTARS.2012.2189873
+
+https://doi.org/10.3390/su11072032
+
+https://en.institutparisregion.fr/know-how/environment/vulnerability-of-towns-and-cities-to-rising-temperatures-assessed-using-the-local-climate-zones/",Vulnerability class of the unit of analysis to urban heat islands in relation to the local climate zone class to which it belongs
+I1086,Sensitivity,Share of vulnerable population,"https://www.icos-cp.eu/news-and-events/news/european-cities-heatwaves-hit-most-vulnerable
+
+https://iopscience.iop.org/article/10.1088/1748-9326/adbcc8/meta",Percentage of population sensitive to heat waves (under 5 and over 65 years old)
+I1087,Sensitivity,Poverty rate,"https://www.icos-cp.eu/news-and-events/news/european-cities-heatwaves-hit-most-vulnerable
+
+https://iopscience.iop.org/article/10.1088/1748-9326/adbcc8/meta",Rate of low-income households 
 I1088,Adaptive Capacity,Accessibility to cooling areas,,Proportion of the population with access to a cooling area nearby (less than 10 minutes' walk) 
-I1089,Sensitivity,Quality and structure of the green network,,"This index is a weighted sum of most relevant biodiversity indicators such as share of green, canopy and herbaceous area as well as connectivity and distance between canopy areas "
+I1089,Sensitivity,Quality and structure of the green network,"https://www.forestresearch.gov.uk/tools-and-resources/fthr/urban-regeneration-and-greenspace-partnership/planning-integrated-landscapes/urban-green-networks-corridors-and-linkages/
+
+https://environment.ec.europa.eu/topics/nature-and-biodiversity/green-infrastructure_en
+
+https://www.sciencedirect.com/science/article/abs/pii/S0169204619303299","This index is a weighted sum of most relevant biodiversity indicators such as share of green, canopy and herbaceous area as well as connectivity and distance between canopy areas - Use I1090, I1091, I1092 and I1093"
 I1090,Sensitivity,Share of green area,"The indicator green cover indicates the proportion of public green spaces covering the entire city or a district (with a recommended target of 30%–40%). This 30%–40% of green coverin the form of public and private green spaces would contribute to a significant air temperature reduction in cities. This indicator is calculated using the total area of all green spaces available under the atmospheric canopy in proportion to the total area of land (Patel et al 2025, https://doi.org/10.1002/cli2.70009).
 
 Additional sources:
@@ -230,17 +252,38 @@ https://www.cabidigitallibrary.org/doi/full/10.5555/20183020539
 ",Percentage of the surface area of the unit of analysis occupied by wooded vegetation (private and public spaces combined) also called canopy index 
 I1092,Sensitivity,Share of herbaceous area,,Percentage of the surface area of the analysis unit occupied by low vegetation like shrub and grassland (private and public spaces combined)
 I1093,Sensitivity,Mean distance between canopy areas,,Distance as the crow flies between canopy areas and their nearest neighbours in the unit of analysis under consideration
-I1094,Adaptive Capacity,Urban vegetation and well-being,,"This index is a weighted sum of most relevant well-being (related to vegetation) indicators such as green, canopy and public green areas per capita as well as accessibility to public green spaces"
-I1095,Adaptive Capacity,Green area per capita,,Average area of green space per inhabitant per analysis unit
-I1096,Adaptive Capacity,Area of public green spaces per capita,"This indicator provides information about how much public green space is available in the walking distance of 300–500m for citizens.
+I1094,Adaptive Capacity,Urban vegetation and well-being,"https://pubmed.ncbi.nlm.nih.gov/35856464/
+
+https://www.eea.europa.eu/publications/who-benefits-from-nature-in
+
+https://www.sciencedirect.com/science/article/pii/S2542519621002291 
+
+https://urbact.eu/articles/access-nature-cities-improves-health-and-boosts-well-being
+
+https://www.sciencedirect.com/science/article/abs/pii/S1618866721001308","This index is a weighted sum of most relevant well-being (related to vegetation) indicators such as green, canopy and public green areas per capita as well as accessibility to public green spaces (I1095, I1096, I1097,I1099,I1099)"
+I1095,Adaptive Capacity,Green area per capita,"https://www.sciencedirect.com/science/article/pii/S2542519621002291
+
+https://www.sciencedirect.com/science/article/abs/pii/S1618866721001308
+
+
+https://pubmed.ncbi.nlm.nih.gov/35856464/",Average area of green space per inhabitant per analysis unit
+I1096,Adaptive Capacity,Area of public green spaces per capita,"https://urbact.eu/articles/access-nature-cities-improves-health-and-boosts-well-being
+
+https://www.sciencedirect.com/science/article/abs/pii/S1618866721001308
+",Average area of public green space per inhabitant per analysis unit
+I1097,Adaptive Capacity,Canopy area per capita,"https://efi.int/news/new-efi-policy-brief-explores-how-trees-and-urban-forests-combat-health-problems-2024-07-09
+",Average area of canopy (surface area of trees seen from the sky) per inhabitant per unit of analysis
+I1098,Adaptive Capacity,Share of public green spaces,"https://urbact.eu/articles/access-nature-cities-improves-health-and-boosts-well-being
+
+https://www.sciencedirect.com/science/article/abs/pii/S1618866721001308",Percentage of the surface area of the analysis unit made up of public green spaces
+I1099,Adaptive Capacity,Accessiblity to public green spaces,"This indicator provides information about how much public green space is available in the walking distance of 300–500m for citizens.
 Source
-Nieuwenhuijsen,M.J., P.Dadvand, S.Márquez, et al. 2022. “The Evaluation of the 3-30-300 Green Space Rule and Mental Health.” Environmental Research 215:114387. https://doi.org/10.1016/j.envres.2022.114387.",Average area of public green space per inhabitant per analysis unit
-I1097,Adaptive Capacity,Canopy area per capita,,Average area of canopy (surface area of trees seen from the sky) per inhabitant per unit of analysis
-I1098,Adaptive Capacity,Share of public green spaces,,Percentage of the surface area of the analysis unit made up of public green spaces
-I1099,Adaptive Capacity,Accessiblity to public green spaces,,Proportion of the population with access to a relatively large public green space (over 5000m²) nearby (less than 10 minutes' walk) 
-I1100,Exposure,Land Surface temperature,"High-resolution land surface temperature (LST) data are often freely available online, and it is valuable for understanding the temperature vulnerability on a smaller scale. To derive LST, remote sensing data are predominantly used. However, using LST as an indicator has some limitations, in particular that it cannot directly contribute to calculating human thermal comfort levels. Moreover,LST requires land surface emissivity (LSE) in the calculation methodologies (Patel et al 2025; https://doi.org/10.1002/cli2.70009). 
-Related sources: 
-https://doi.org/10.1029/2022RG000777 
-https://doi.org/10.1016/j.scs.2017.03.013 
-https://doi.org/10.1007/s40808-023-01822-2 ",Mean Land surface temperature  in the unit of analysis under consideration
-I1101,,here,,
+Nieuwenhuijsen,M.J., P.Dadvand, S.Márquez, et al. 2022. “The Evaluation of the 3-30-300 Green Space Rule and Mental Health.” Environmental Research 215:114387. https://doi.org/10.1016/j.envres.2022.114387.
+
+https://urbact.eu/articles/access-nature-cities-improves-health-and-boosts-well-being
+
+https://www.sciencedirect.com/science/article/abs/pii/S1618866721001308",Proportion of the population with access to a relatively large public green space (over 5000m²) nearby (less than 10 minutes' walk) 
+I1100,Exposure,Land Surface temperature,"https://doi.org/10.5066/P9OGBGM6
+
+downloaded on:
+https://earthexplorer.usgs.gov/",Mean Land surface temperature  in the unit of analysis under consideration
