@@ -66,7 +66,7 @@ Source: Monitoring agricultural and economic drought: the Australian Agricultura
 I1039,Sensitivity,Number of disruptions in energy system due to heat and drought,"García-León, D., Casanueva, A., Standardi, G. et al. Current and projected regional economic impacts of heatwaves in Europe. Nat Commun 12, 5807 (2021). https://doi.org/10.1038/s41467-021-26050-z
 
 Compound Climate and Infrastructure Events: How Electrical Grid Failure Alters Heat Wave Risk. Environ Sci Technol. 2021 Apr 30;55(10):6957–6964. doi: 10.1021/acs.est.1c00024","Number and/or distribution of weather-related disruptions. Can help understand, which weather-related events cause disruptions currently and does the changing climate increase/decrease the risk of occurrence."
-I1040,exposure,Number of disruptions in energy system due to flooding,"Weather-related disruptions in and unavailabilty of power supply: https://www.umweltbundesamt.de/en/monitoring-on-das/cluster/energy-industry/ew-i-1/indicator#ew-i-1-weather-related-disruptions-in-power-supply-
+I1040,Exposure,Number of disruptions in energy system due to flooding,"Weather-related disruptions in and unavailabilty of power supply: https://www.umweltbundesamt.de/en/monitoring-on-das/cluster/energy-industry/ew-i-1/indicator#ew-i-1-weather-related-disruptions-in-power-supply-
 
 Copernicus: 
 https://climate.copernicus.eu/esotc/2024/flooding
