@@ -14,4 +14,10 @@ Link to [airtable prototype](https://airtable.com/appRz8KWMmZHHcJel/pagowkAjqU0d
 
 ## data
 
+The main catalog data is stored in the table in the `data` subdirectory. There is mainly two tables containing indicators and datasets. Another tables links both together.
+
 The data in this repository should be [tidy](https://data.europa.eu/apps/data-visualisation-guide/intro-to-tidy-data).
+
+## catalog
+
+A user friendly excel table is created by linking all data together. You can download it directly from the repository [here](https://github.com/valorada/catalog/raw/refs/heads/main/catalog.xlsx).
