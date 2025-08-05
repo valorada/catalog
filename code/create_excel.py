@@ -1,9 +1,16 @@
 import pandas as pd
-
+import os
 import pandas.io.formats.excel
 
 # https://stackoverflow.com/questions/39892684/how-can-i-format-the-index-columns-with-xlsxwriter
 pandas.io.formats.excel.ExcelFormatter.header_style = None
+
+
+path = "data"
+datasets_file = os.path.join(path, "datasets.csv")
+indicators_file = os.path.join(path, "indicators.csv")
+links_file = os.path.join(path, "links_indicator_to_data.csv")
+excel_file = os.path.join("catalog.xlsx")
 
 
 def create_dataframes():
@@ -19,9 +26,9 @@ def create_dataframes():
     Returns:
         pd.DataFrame: The merged and indexed DataFrame ready for export.
     """
-    datasets = pd.read_csv("datasets.csv")
-    indicators = pd.read_csv("indicators.csv")
-    links = pd.read_csv("links.csv")
+    datasets = pd.read_csv(datasets_file)
+    indicators = pd.read_csv(indicators_file)
+    links = pd.read_csv(links_file)
 
     ind_cols = indicators.set_index("indicator_id").columns.to_list()
     indicators.rename(
@@ -144,5 +151,5 @@ def write_to_excel(df, filename="catalog.xlsx"):
 
 if __name__ == "__main__":
     df = create_dataframes()
-    write_to_excel(df, "catalog.xlsx")
-    print("Excel file created successfully.")
+    write_to_excel(df, excel_file)
+    print(f"Excel file created successfully: {excel_file}")
