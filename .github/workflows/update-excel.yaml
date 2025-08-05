@@ -38,7 +38,7 @@ jobs:
       run: |
         python code/create-excel.py
 
-    - name: Commit and push
+    - name: commit and push
       # if: steps.verify_diff.outputs.changed == 'true'
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
