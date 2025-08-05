@@ -9,3 +9,7 @@ VALORADA is a project funded by the European Commission in the framework of the 
 * The improvement of access to and usability of climate data.
 
 Link to [airtable prototype](https://airtable.com/appRz8KWMmZHHcJel/pagowkAjqU0dZZmWY).
+
+## data
+
+The data in this repository should be [tidy](https://data.europa.eu/apps/data-visualisation-guide/intro-to-tidy-data).
