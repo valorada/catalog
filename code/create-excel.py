@@ -9,7 +9,9 @@ pandas.io.formats.excel.ExcelFormatter.header_style = None
 path = "data"
 datasets_file = os.path.join(path, "datasets.csv")
 indicators_file = os.path.join(path, "indicators.csv")
-links_file = os.path.join(path, "links_indicator_to_data.csv")
+cics_file = os.path.join(path, "cic.csv")
+links_indicator_to_datasets_file = os.path.join(path, "links_indicator_to_data.csv")
+links_indicator_to_cic_file = os.path.join(path, "links_indicator_to_cic.csv")
 excel_file = os.path.join("catalog.xlsx")
 
 
@@ -28,8 +30,21 @@ def create_dataframes():
     """
     datasets = pd.read_csv(datasets_file)
     indicators = pd.read_csv(indicators_file)
-    links = pd.read_csv(links_file)
+    links_data = pd.read_csv(links_indicator_to_datasets_file)
+    links_cic = pd.read_csv(links_indicator_to_cic_file)
 
+    # Aggregate CIC ids per indicator -> list
+    cic_links = (
+        links_cic.groupby("indicator_id")["cic_id"]
+        .agg(lambda s: sorted(set(s.dropna())))
+        .reset_index()
+        .rename(columns={"cic_id": "indicator_cic_ids"})
+    )
+    cic_links["indicator_cic_ids"] = cic_links["indicator_cic_ids"].apply(
+        lambda lst: ",".join(lst)
+    )
+
+    # Prefix columns
     ind_cols = indicators.set_index("indicator_id").columns.to_list()
     indicators.rename(
         columns={col: "indicator_" + col for col in ind_cols}, inplace=True
@@ -44,13 +59,13 @@ def create_dataframes():
         "indicator_source",
         "indicator_description",
     ]
-    return (
-        links.merge(indicators, on="indicator_id", how="left")
+    merged = (
+        links_data.merge(indicators, on="indicator_id", how="left")
         .merge(datasets, on="dataset_id", how="left")
+        .merge(cic_links, on="indicator_id", how="left")
         .sort_values(["indicator_category", "indicator_id"])
-        .set_index(index)
-        .fillna("")
     )
+    return merged.set_index(index).fillna("")
 
 
 def write_to_excel(df, filename="catalog.xlsx"):
