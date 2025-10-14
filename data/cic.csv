@@ -1,0 +1,6 @@
+cic_id,area,description,impact
+CIC.1,Urban,"Degradation of urban ecosystems due to urban warming and drought","Environmental/ecosystem impact in cities — urban heat islands and reduced green space health"
+CIC.2,Urban,"High temperatures affecting people’s health and the public transport system","Socioeconomic and infrastructure impact — heat stress on people, transport disruptions"
+CIC.3,Rural,"Increasing temperatures and drought affecting the agricultural sector","Economic/livelihood impact — reduced crop yields, water scarcity for farming"
+CIC.4,Rural,"Drought and heat increasing the risk of wildfires","Environmental hazard — increased wildfire frequency/intensity threatening rural ecosystems and communities"
+CIC.5,Rural,"Hydrogeologic affectation on rural livelihoods, infrastructure, and agricultural means of production","Water-related risk — impacts from groundwater depletion, soil erosion, or landslides affecting rural areas"
