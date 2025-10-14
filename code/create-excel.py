@@ -34,15 +34,13 @@ def create_dataframes():
     links_cic = pd.read_csv(links_indicator_to_cic_file)
 
     # Aggregate CIC ids per indicator -> list
-    cic_links = (
+    links_cic = (
         links_cic.groupby("indicator_id")["cic_id"]
         .agg(lambda s: sorted(set(s.dropna())))
         .reset_index()
-        .rename(columns={"cic_id": "indicator_cic_ids"})
+        # .rename(columns={"cic_id": "cic_ids"})
     )
-    cic_links["indicator_cic_ids"] = cic_links["indicator_cic_ids"].apply(
-        lambda lst: ",".join(lst)
-    )
+    links_cic["cic_id"] = links_cic["cic_id"].apply(lambda lst: ", ".join(lst))
 
     # Prefix columns
     ind_cols = indicators.set_index("indicator_id").columns.to_list()
@@ -59,10 +57,14 @@ def create_dataframes():
         "indicator_source",
         "indicator_description",
     ]
+
+    indicators = links_cic.merge(indicators, on="indicator_id", how="right")
+
     merged = (
-        links_data.merge(indicators, on="indicator_id", how="left")
-        .merge(datasets, on="dataset_id", how="left")
-        .merge(cic_links, on="indicator_id", how="left")
+        links_data.merge(indicators, on="indicator_id", how="left").merge(
+            datasets, on="dataset_id", how="left"
+        )
+        # .merge(links_cic, on="indicator_id", how="left")
         .sort_values(["indicator_category", "indicator_id"])
     )
     return merged.set_index(index).fillna("")
